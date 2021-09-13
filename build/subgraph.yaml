@@ -50,3 +50,291 @@ dataSources:
       blockHandlers:
         - handler: handleBlock
       file: cDAIPool/cDAIPool.wasm
+  - kind: ethereum/contract
+    name: cUNIPool
+    network: mainnet
+    source:
+      address: "0x5dda04b2BDBBc3FcFb9B60cd9eBFd1b27f1A4fE3"
+      abi: DInterest
+      startBlock: 13156898
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - EDeposit
+        - EFund
+        - EPayFundingInterest
+        - ERolloverDeposit
+        - ESetParamAddress
+        - ESetParamUint
+        - ETopupDeposit
+        - EWithdraw
+        - OwnershipTransferred
+      abis:
+        - name: DInterest
+          file: cUNIPool/abis/DInterest.json
+        - name: IInterestOracle
+          file: cUNIPool/abis/IInterestOracle.json
+      eventHandlers:
+        - event: EDeposit(indexed address,indexed uint256,uint256,uint256,uint256,uint64)
+          handler: handleEDeposit
+        - event: EFund(indexed address,indexed uint64,uint256,uint256)
+          handler: handleEFund
+        - event: EPayFundingInterest(indexed uint256,uint256,uint256)
+          handler: handleEPayFundingInterest
+        - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
+          handler: handleERolloverDeposit
+        - event: ESetParamAddress(indexed address,indexed string,address)
+          handler: handleESetParamAddress
+        - event: ESetParamUint(indexed address,indexed string,uint256)
+          handler: handleESetParamUint
+        - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
+          handler: handleETopupDeposit
+        - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
+          handler: handleEWithdraw
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+      blockHandlers:
+        - handler: handleBlock
+      file: cDAIPool/cDAIPool.wasm
+  - kind: ethereum/contract
+    name: cLINKPool
+    network: mainnet
+    source:
+      address: "0x572bE575D1aA1Ca84d8Ac4274067f7bCB578a368"
+      abi: DInterest
+      startBlock: 13157335
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - EDeposit
+        - EFund
+        - EPayFundingInterest
+        - ERolloverDeposit
+        - ESetParamAddress
+        - ESetParamUint
+        - ETopupDeposit
+        - EWithdraw
+        - OwnershipTransferred
+      abis:
+        - name: DInterest
+          file: cLINKPool/abis/DInterest.json
+        - name: IInterestOracle
+          file: cLINKPool/abis/IInterestOracle.json
+      eventHandlers:
+        - event: EDeposit(indexed address,indexed uint256,uint256,uint256,uint256,uint64)
+          handler: handleEDeposit
+        - event: EFund(indexed address,indexed uint64,uint256,uint256)
+          handler: handleEFund
+        - event: EPayFundingInterest(indexed uint256,uint256,uint256)
+          handler: handleEPayFundingInterest
+        - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
+          handler: handleERolloverDeposit
+        - event: ESetParamAddress(indexed address,indexed string,address)
+          handler: handleESetParamAddress
+        - event: ESetParamUint(indexed address,indexed string,uint256)
+          handler: handleESetParamUint
+        - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
+          handler: handleETopupDeposit
+        - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
+          handler: handleEWithdraw
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+      blockHandlers:
+        - handler: handleBlock
+      file: cDAIPool/cDAIPool.wasm
+  - kind: ethereum/contract
+    name: aDAIPool
+    network: mainnet
+    source:
+      address: "0x6D97eA6e14D35e10b50df9475e9EFaAd1982065E"
+      abi: DInterest
+      startBlock: 13157722
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - EDeposit
+        - EFund
+        - EPayFundingInterest
+        - ERolloverDeposit
+        - ESetParamAddress
+        - ESetParamUint
+        - ETopupDeposit
+        - EWithdraw
+        - OwnershipTransferred
+      abis:
+        - name: DInterest
+          file: aDAIPool/abis/DInterest.json
+        - name: IInterestOracle
+          file: aDAIPool/abis/IInterestOracle.json
+      eventHandlers:
+        - event: EDeposit(indexed address,indexed uint256,uint256,uint256,uint256,uint64)
+          handler: handleEDeposit
+        - event: EFund(indexed address,indexed uint64,uint256,uint256)
+          handler: handleEFund
+        - event: EPayFundingInterest(indexed uint256,uint256,uint256)
+          handler: handleEPayFundingInterest
+        - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
+          handler: handleERolloverDeposit
+        - event: ESetParamAddress(indexed address,indexed string,address)
+          handler: handleESetParamAddress
+        - event: ESetParamUint(indexed address,indexed string,uint256)
+          handler: handleESetParamUint
+        - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
+          handler: handleETopupDeposit
+        - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
+          handler: handleEWithdraw
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+      blockHandlers:
+        - handler: handleBlock
+      file: cDAIPool/cDAIPool.wasm
+  - kind: ethereum/contract
+    name: aUSDCPool
+    network: mainnet
+    source:
+      address: "0x2d3141f4C9872d4F53B587C3fB8b22736FeB54b0"
+      abi: DInterest
+      startBlock: 13158219
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - EDeposit
+        - EFund
+        - EPayFundingInterest
+        - ERolloverDeposit
+        - ESetParamAddress
+        - ESetParamUint
+        - ETopupDeposit
+        - EWithdraw
+        - OwnershipTransferred
+      abis:
+        - name: DInterest
+          file: aUSDCPool/abis/DInterest.json
+        - name: IInterestOracle
+          file: aUSDCPool/abis/IInterestOracle.json
+      eventHandlers:
+        - event: EDeposit(indexed address,indexed uint256,uint256,uint256,uint256,uint64)
+          handler: handleEDeposit
+        - event: EFund(indexed address,indexed uint64,uint256,uint256)
+          handler: handleEFund
+        - event: EPayFundingInterest(indexed uint256,uint256,uint256)
+          handler: handleEPayFundingInterest
+        - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
+          handler: handleERolloverDeposit
+        - event: ESetParamAddress(indexed address,indexed string,address)
+          handler: handleESetParamAddress
+        - event: ESetParamUint(indexed address,indexed string,uint256)
+          handler: handleESetParamUint
+        - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
+          handler: handleETopupDeposit
+        - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
+          handler: handleEWithdraw
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+      blockHandlers:
+        - handler: handleBlock
+      file: cDAIPool/cDAIPool.wasm
+  - kind: ethereum/contract
+    name: aUSDTPool
+    network: mainnet
+    source:
+      address: "0xb1b225402b5eC977AF8c721f42F21Db5518785dc"
+      abi: DInterest
+      startBlock: 13160904
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - EDeposit
+        - EFund
+        - EPayFundingInterest
+        - ERolloverDeposit
+        - ESetParamAddress
+        - ESetParamUint
+        - ETopupDeposit
+        - EWithdraw
+        - OwnershipTransferred
+      abis:
+        - name: DInterest
+          file: aUSDTPool/abis/DInterest.json
+        - name: IInterestOracle
+          file: aUSDTPool/abis/IInterestOracle.json
+      eventHandlers:
+        - event: EDeposit(indexed address,indexed uint256,uint256,uint256,uint256,uint64)
+          handler: handleEDeposit
+        - event: EFund(indexed address,indexed uint64,uint256,uint256)
+          handler: handleEFund
+        - event: EPayFundingInterest(indexed uint256,uint256,uint256)
+          handler: handleEPayFundingInterest
+        - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
+          handler: handleERolloverDeposit
+        - event: ESetParamAddress(indexed address,indexed string,address)
+          handler: handleESetParamAddress
+        - event: ESetParamUint(indexed address,indexed string,uint256)
+          handler: handleESetParamUint
+        - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
+          handler: handleETopupDeposit
+        - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
+          handler: handleEWithdraw
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+      blockHandlers:
+        - handler: handleBlock
+      file: cDAIPool/cDAIPool.wasm
+  - kind: ethereum/contract
+    name: harvestCRVRENWBTCPool
+    network: mainnet
+    source:
+      address: "0x5b1a10aAF807d4297048297c30B2504b42C3395F"
+      abi: DInterest
+      startBlock: 13163970
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - EDeposit
+        - EFund
+        - EPayFundingInterest
+        - ERolloverDeposit
+        - ESetParamAddress
+        - ESetParamUint
+        - ETopupDeposit
+        - EWithdraw
+        - OwnershipTransferred
+      abis:
+        - name: DInterest
+          file: harvestCRVRENWBTCPool/abis/DInterest.json
+        - name: IInterestOracle
+          file: harvestCRVRENWBTCPool/abis/IInterestOracle.json
+      eventHandlers:
+        - event: EDeposit(indexed address,indexed uint256,uint256,uint256,uint256,uint64)
+          handler: handleEDeposit
+        - event: EFund(indexed address,indexed uint64,uint256,uint256)
+          handler: handleEFund
+        - event: EPayFundingInterest(indexed uint256,uint256,uint256)
+          handler: handleEPayFundingInterest
+        - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
+          handler: handleERolloverDeposit
+        - event: ESetParamAddress(indexed address,indexed string,address)
+          handler: handleESetParamAddress
+        - event: ESetParamUint(indexed address,indexed string,uint256)
+          handler: handleESetParamUint
+        - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
+          handler: handleETopupDeposit
+        - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
+          handler: handleEWithdraw
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+      blockHandlers:
+        - handler: handleBlock
+      file: cDAIPool/cDAIPool.wasm
