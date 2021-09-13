@@ -1,0 +1,23 @@
+specVersion: 0.0.1
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: DInterest
+    network: mainnet
+    source:
+      address: "0x11b1c87983f881b3686f8b1171628357faa30038"
+      abi: DInterest
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.2
+      language: wasm/assemblyscript
+      entities:
+        - Upgraded
+      abis:
+        - name: DInterest
+          file: ./abis/DInterest.json
+      eventHandlers:
+        - event: Upgraded(indexed address)
+          handler: handleUpgraded
+      file: ./src/mapping.ts
