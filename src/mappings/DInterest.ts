@@ -1,4 +1,4 @@
-import { BigDecimal, BigInt, Address, ByteArray, crypto, ethereum, dataSource } from "@graphprotocol/graph-ts";
+import { BigDecimal, BigInt, Address, crypto, ethereum, dataSource } from "@graphprotocol/graph-ts";
 import { EDeposit, ETopupDeposit, EWithdraw, EFund, EPayFundingInterest, ESetParamAddress, ESetParamUint } from "../../generated/cDAIPool/DInterest";
 import { DInterest } from '../../generated/cDAIPool/DInterest';
 import { MoneyMarket } from '../../generated/cDAIPool/MoneyMarket';

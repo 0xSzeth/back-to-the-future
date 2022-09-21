@@ -1,4 +1,4 @@
-specVersion: 0.0.5
+specVersion: 0.0.6
 schema:
   file: ./schema.graphql
 dataSources:
@@ -24,8 +24,6 @@ dataSources:
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      # blockHandlers:
-      #   - handler: handleBlock
       file: ./src/mappings/MPH.ts
   - kind: ethereum/contract
     name: xMPH
@@ -201,8 +199,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -252,8 +248,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -303,8 +297,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -354,8 +346,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -405,8 +395,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -456,8 +444,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -507,8 +493,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -558,8 +542,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -609,8 +591,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -660,8 +640,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -711,8 +689,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -762,8 +738,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -813,8 +787,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -864,8 +836,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -915,8 +885,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -966,8 +934,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1017,8 +983,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1068,8 +1032,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1119,8 +1081,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1170,8 +1130,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1221,8 +1179,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1272,8 +1228,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1323,8 +1277,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1374,8 +1326,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1425,8 +1375,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1476,8 +1424,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1527,8 +1473,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1578,8 +1522,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1629,8 +1571,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1680,8 +1620,6 @@ dataSources:
           handler: handleEDeposit
         - event: ETopupDeposit(indexed address,indexed uint64,uint256,uint256,uint256)
           handler: handleETopupDeposit
-        # - event: ERolloverDeposit(indexed address,indexed uint64,indexed uint64)
-        #   handler: handleERolloverDeposit
         - event: EWithdraw(indexed address,indexed uint256,indexed bool,uint256,uint256)
           handler: handleEWithdraw
         - event: EFund(indexed address,indexed uint64,uint256,uint256)
@@ -1696,11 +1634,11 @@ dataSources:
         - handler: handleBlock
       file: ./src/mappings/DInterest.ts
   - kind: ethereum/contract
-    name: Vesting02
+    name: Vesting03
     network: mainnet
     source:
       address: "0xA907C7c3D13248F08A3fb52BeB6D1C079507Eb4B"
-      abi: Vesting02
+      abi: Vesting03
       startBlock: 13134912
     mapping:
       kind: ethereum/events
@@ -1708,9 +1646,10 @@ dataSources:
       language: wasm/assemblyscript
       entities:
         - Vest
+        - Deposit
       abis:
-        - name: Vesting02
-          file: ./abis/Vesting02.json
+        - name: Vesting03
+          file: ./abis/Vesting03.json
         - name: DInterest
           file: ./abis/DInterest.json
       eventHandlers:
@@ -1722,30 +1661,10 @@ dataSources:
           handler: handleWithdraw
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-      file: ./src/mappings/Vesting02.ts
-  - kind: ethereum/contract
-    name: Vesting03
-    network: mainnet
-    source:
-      address: "0x6A5aD7216e11157eB0Fb26174196B06AbB3859f4"
-      abi: Vesting03
-      startBlock: 15183416
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.7
-      language: wasm/assemblyscript
-      entities:
-        - Vest
-      abis:
-        - name: Vesting03
-          file: ./abis/Vesting03.json
-      eventHandlers:
         - event: Staked(indexed uint64,uint256)
           handler: handleStaked
         - event: RewardPaid(indexed uint64,uint256)
           handler: handleRewardPaid
-        - event: Transfer(indexed address,indexed address,indexed uint256)
-          handler: handleTransfer
       file: ./src/mappings/Vesting03.ts
 templates:
   - kind: ethereum/contract

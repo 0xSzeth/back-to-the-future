@@ -1,7 +1,7 @@
 import { Address, BigInt, DataSourceContext } from "@graphprotocol/graph-ts";
 import { ERC20 } from "../../generated/cDAIPool/ERC20";
 import { DInterest } from "../../generated/cDAIPool/DInterest";
-import { Vesting02 } from "../../generated/Vesting02/Vesting02";
+import { Vesting03 } from "../../generated/Vesting03/Vesting03";
 import { Protocol, User, DPool, Deposit, Vest, MPH, xMPH, veMPH, VotingLock, Gauge, GaugeVote, FunderDetails } from "../../generated/schema";
 import { ERC721, FundingMultitoken } from "../../generated/templates";
 
@@ -132,7 +132,7 @@ export function getVest(address: Address, vestID: BigInt): Vest {
   let vest = Vest.load(vestID.toString());
 
   if (vest === null) {
-    let vestContract = Vesting02.bind(address);
+    let vestContract = Vesting03.bind(address);
     let vestStruct = vestContract.getVest(vestID);
 
     vest = new Vest(vestID.toString());
